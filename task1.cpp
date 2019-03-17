@@ -1,6 +1,8 @@
 #include<stdio.h>
 int issushu(int a)
 {
+	if(a<1)
+	return 0;
 	for(int i=2;i<a/2;i++)
 	{
 		if(a%i==0)
@@ -26,8 +28,8 @@ int main()
 			max=i; 
 		}
 	}
-	printf("³¬¼¶ËØÊıµÄ¸öÊıÊÇ%d\n",num);
-	printf("ËùÓĞ³¬¼¶ËØÊıÖ®ºÍÊÇ%d\n",sum);
-	printf("×î´óµÄ³¬¼¶ËØÊıÊÇ%d\n",max);
+	printf("è¶…çº§ç´ æ•°çš„ä¸ªæ•°æ˜¯%d\n",num);
+	printf("æ‰€æœ‰è¶…çº§ç´ æ•°ä¹‹å’Œæ˜¯%d\n",sum);
+	printf("æœ€å¤§çš„è¶…çº§ç´ æ•°æ˜¯%d\n",max);
 	return 0;
  } 
